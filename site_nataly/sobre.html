@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <!-- Configurações básicas da página. -->
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Perfil profissional de Nataly, estudante de Tecnologia em Sistemas para Internet.">
+
+  <title>Sobre Mim | Nataly</title>
+
+  <!-- Arquivo principal de estilos do site. -->
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <!-- Link visível apenas ao usar teclado. -->
+  <a class="skip-link" href="#conteudo">Pular para o conteúdo principal</a>
+
+  <!-- Cabeçalho fixo: reúne a marca do site e o menu principal. -->
+  <header class="site-header">
+    <div class="container navbar">
+      <a class="logo" href="index.html" aria-label="Ir para a página inicial de Nataly">Nataly<span>.</span></a>
+
+      <!-- Menu com links internos para todas as páginas do site. -->
+      <nav class="main-nav" aria-label="Menu principal">
+        <ul>
+          <li><a href="index.html">Início</a></li>
+          <li><a class="active" aria-current="page" href="sobre.html">Sobre mim</a></li>
+          <li><a href="portfolio.html">Portfólio</a></li>
+          <li><a href="curriculo.html">Currículo</a></li>
+          <li><a href="contato.html">Contato</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Conteúdo principal da página. O tabindex permite receber foco pelo link de acessibilidade. -->
+  <main id="conteudo" tabindex="-1">
+    <!-- Título da página. -->
+    <section class="container page-title" aria-labelledby="sobre-titulo">
+      <span class="tag">Sobre mim</span>
+      <h1 id="sobre-titulo">Minha trajetória e objetivos.</h1>
+      <p>Conheça um pouco da minha história, interesses, habilidades e metas profissionais.</p>
+    </section>
+
+    <!-- Conteúdo em duas colunas: foto e texto biográfico. -->
+    <section class="container section two-col" aria-label="Biografia e habilidades">
+      <div class="photo-frame">
+        <img src="img/nataly-1.jpeg" alt="Retrato de Nataly com roupa azul em frente a uma área verde">
+      </div>
+
+      <article class="card">
+        <h2>Biografia</h2>
+        <p>
+          Meu nome é Nataly e estou construindo minha trajetória profissional com dedicação,
+          curiosidade e vontade de aprender. Tenho interesse por tecnologia, desenvolvimento web
+          e criação de projetos que unam organização, criatividade e funcionalidade.
+        </p>
+
+        <h3>Habilidades</h3>
+        <ul class="list">
+          <li>Trabalho em equipe</li>
+          <li>Organização e responsabilidade</li>
+          <li>Aprendizado contínuo</li>
+          <li>Interesse por HTML, CSS, Linguagem C e tecnologia</li>
+        </ul>
+
+        <h3>Objetivos profissionais</h3>
+        <p>
+          Meu objetivo é evoluir na área de tecnologia, desenvolver projetos digitais e aprimorar
+          minhas competências técnicas e pessoais para atuar com mais segurança no mercado.
+        </p>
+      </article>
+    </section>
+
+    <!-- Interesses. -->
+    <section class="container section" aria-labelledby="interesses-titulo">
+      <h2 id="interesses-titulo">Interesses e objetivos</h2>
+      <div class="grid">
+        <article class="card accent">
+          <h3>Desenvolvimento Web</h3>
+          <p>Criação de páginas modernas, responsivas e organizadas.</p>
+        </article>
+        <article class="card">
+          <h3>Programação</h3>
+          <p>Estudo de lógica, algoritmos e desenvolvimento em Linguagem C.</p>
+        </article>
+        <article class="card">
+          <h3>Crescimento profissional</h3>
+          <p>Busca constante por aprendizado, prática e melhoria de projetos.</p>
+        </article>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- Rodapé com navegação complementar. -->
+  <footer class="site-footer">
+    <div class="container footer-content">
+      <p>&copy; 2026 Nataly - Perfil Profissional.</p>
+      <p><a href="index.html">Página inicial</a></p>
+    </div>
+  </footer>
+
+  <!-- VLibras. -->
+  <div vw class="enabled">
+    <div vw-access-button class="active"></div>
+    <div vw-plugin-wrapper>
+      <div class="vw-plugin-top-wrapper"></div>
+    </div>
+  </div>
+  <script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
+  <script>
+    new window.VLibras.Widget('https://vlibras.gov.br/app');
+  </script>
+</body>
+</html>

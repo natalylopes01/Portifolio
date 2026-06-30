@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <!-- Configurações básicas da página. -->
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Perfil profissional de Nataly, estudante de Tecnologia em Sistemas para Internet.">
+
+  <title>Currículo | Nataly</title>
+
+  <!-- Arquivo principal de estilos do site. -->
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <!-- Link visível apenas ao usar teclado. -->
+  <a class="skip-link" href="#conteudo">Pular para o conteúdo principal</a>
+
+  <!-- Cabeçalho fixo: reúne a marca do site e o menu principal. -->
+  <header class="site-header">
+    <div class="container navbar">
+      <a class="logo" href="index.html" aria-label="Ir para a página inicial de Nataly">Nataly<span>.</span></a>
+
+      <!-- Menu com links internos para todas as páginas do site. -->
+      <nav class="main-nav" aria-label="Menu principal">
+        <ul>
+          <li><a href="index.html">Início</a></li>
+          <li><a href="sobre.html">Sobre mim</a></li>
+          <li><a href="portfolio.html">Portfólio</a></li>
+          <li><a class="active" aria-current="page" href="curriculo.html">Currículo</a></li>
+          <li><a href="contato.html">Contato</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Conteúdo principal da página. O tabindex permite receber foco pelo link de acessibilidade. -->
+  <main id="conteudo" tabindex="-1">
+    <!-- Título da página. -->
+    <section class="container page-title" aria-labelledby="curriculo-titulo">
+      <span class="tag">Currículo</span>
+      <h1 id="curriculo-titulo">Formação e competências.</h1>
+      <p>Informações organizadas em tabelas e listas para facilitar a leitura.</p>
+    </section>
+
+    <!-- Tabela  apresenta a formação acadêmica. -->
+    <section class="container section" aria-labelledby="formacao-titulo">
+      <h2 id="formacao-titulo">Formação acadêmica</h2>
+      <div class="table-wrapper">
+        <table>
+          <thead>
+            <tr>
+              <th scope="col">Curso</th>
+              <th scope="col">Instituição</th>
+              <th scope="col">Situação</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Tecnologia em Sistemas para Internet</td>
+              <td>IFSP Araraquara</td>
+              <td>Em andamento</td>
+            </tr>
+            <tr>
+              <td>Ensino Médio</td>
+              <td>E.E. Joaquim Pinto Machado Júnior</td>
+              <td>Concluído</td>
+            </tr>
+            <tr>
+              <td>Inglês Básico</td>
+              <td>Senac Araraquara</td>
+              <td>Concluído</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <!-- Cards de competências: listas e conteúdo curricular. -->
+    <section class="container section" aria-labelledby="competencias-titulo">
+      <h2 id="competencias-titulo">Competências</h2>
+      <div class="grid">
+        <article class="card">
+          <h3>Competências pessoais</h3>
+          <ul class="list">
+            <li>Organização</li>
+            <li>Responsabilidade</li>
+            <li>Trabalho em equipe</li>
+            <li>Aprendizado contínuo</li>
+          </ul>
+        </article>
+
+        <article class="card accent">
+          <h3>Competências técnicas</h3>
+          <ul class="list">
+            <li>HTML</li>
+            <li>CSS</li>
+            <li>Linguagem C</li>
+            <li>GitHub</li>
+            <li>Design responsivo</li>
+          </ul>
+        </article>
+
+        <article class="card">
+          <h3>Idiomas</h3>
+          <ul class="list">
+            <li>Português: nativo</li>
+            <li>Inglês: básico</li>
+          </ul>
+        </article>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- Rodapé com navegação complementar. -->
+  <footer class="site-footer">
+    <div class="container footer-content">
+      <p>&copy; 2026 Nataly - Perfil Profissional.</p>
+      <p><a href="contato.html">Entrar em contato</a></p>
+    </div>
+  </footer>
+
+  <!-- VLibras. -->
+  <div vw class="enabled">
+    <div vw-access-button class="active"></div>
+    <div vw-plugin-wrapper>
+      <div class="vw-plugin-top-wrapper"></div>
+    </div>
+  </div>
+  <script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
+  <script>
+    new window.VLibras.Widget('https://vlibras.gov.br/app');
+  </script>
+</body>
+</html>

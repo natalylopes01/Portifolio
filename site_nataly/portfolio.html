@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <!-- Configurações básicas da página. -->
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Perfil profissional de Nataly, estudante de Tecnologia em Sistemas para Internet.">
+
+  <title>Portfólio | Nataly</title>
+
+  <!-- Arquivo principal de estilos do site. -->
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <!-- Link visível apenas ao usar teclado: permite pular o menu e ir direto ao conteúdo. -->
+  <a class="skip-link" href="#conteudo">Pular para o conteúdo principal</a>
+
+  <!-- Cabeçalho fixo: reúne a marca do site e o menu principal. -->
+  <header class="site-header">
+    <div class="container navbar">
+      <a class="logo" href="index.html" aria-label="Ir para a página inicial de Nataly">Nataly<span>.</span></a>
+
+      <!-- Menu com links internos para todas as páginas do site. -->
+      <nav class="main-nav" aria-label="Menu principal">
+        <ul>
+          <li><a href="index.html">Início</a></li>
+          <li><a href="sobre.html">Sobre mim</a></li>
+          <li><a class="active" aria-current="page" href="portfolio.html">Portfólio</a></li>
+          <li><a href="curriculo.html">Currículo</a></li>
+          <li><a href="contato.html">Contato</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Conteúdo principal da página. O tabindex permite receber foco pelo link de acessibilidade. -->
+  <main id="conteudo" tabindex="-1">
+    <!-- Título da página. -->
+    <section class="container page-title" aria-labelledby="portfolio-titulo">
+      <span class="tag">Portfólio</span>
+      <h1 id="portfolio-titulo">Projetos desenvolvidos.</h1>
+      <p>
+        Projetos acadêmicos que mostram minha evolução em desenvolvimento web,
+        lógica de programação e organização de interfaces.
+      </p>
+    </section>
+
+    <!-- Projetos principais. -->
+    <section class="container section" aria-labelledby="projetos-titulo">
+      <h2 id="projetos-titulo">Projetos principais</h2>
+      <p class="section-intro">
+        A página destaca projetos reais do curso, com descrição objetiva, tecnologias utilizadas
+        e ligação direta com as competências estudadas.
+      </p>
+
+      <div class="grid grid-2">
+        <article class="card project-card">
+          <img src="img/projeto-villa-nataly.png" alt="Imagem do projeto Villa Nataly, um site de restaurante com cardápio e pedido online">
+          <h3>Villa Nataly - Site de Restaurante</h3>
+          <p>
+            Projeto web desenvolvido para simular a presença digital de um restaurante.
+            O site possui página inicial, cardápio organizado por categorias, imagens dos pratos,
+            tabelas de informações e página de pedido.
+          </p>
+
+          <ul class="badge-list" aria-label="Tecnologias usadas no projeto Villa Nataly">
+            <li>HTML</li>
+            <li>CSS</li>
+            <li>Tabelas</li>
+            <li>Formulário</li>
+            <li>Links internos</li>
+          </ul>
+
+          <div class="project-actions">
+            <a class="btn btn-primary" href="projetos/villa-nataly/index.html" target="_blank" rel="noopener">Abrir projeto</a>
+          </div>
+        </article>
+
+        <article class="card project-card">
+          <img src="img/projeto-loja-games.svg" alt="Imagem ilustrativa do projeto Loja de Games em Linguagem C com controle de videogame">
+          <h3>Loja de Games - Linguagem C</h3>
+          <p>
+            Projeto de programação em modo texto, desenvolvido com foco em cadastro de jogos,
+            menu interativo, relatórios, controle de informações e uso de estruturas da Linguagem C.
+          </p>
+
+          <ul class="badge-list" aria-label="Competências usadas no projeto Loja de Games">
+            <li>Linguagem C</li>
+            <li>Struct</li>
+            <li>Vetores</li>
+            <li>Funções</li>
+            <li>Menu</li>
+          </ul>
+        </article>
+      </div>
+    </section>
+
+    <!-- Aprendizados. -->
+    <section class="container section" aria-labelledby="aprendizados-titulo">
+      <h2 id="aprendizados-titulo">Aprendizados</h2>
+      <div class="grid">
+        <article class="card accent">
+          <h3>Desenvolvimento Web</h3>
+          <p>Criação de páginas com estrutura semântica, organização visual, links, formulários, tabelas e imagens.</p>
+        </article>
+        <article class="card">
+          <h3>Lógica de Programação</h3>
+          <p>Aplicação de variáveis, condições, laços, funções, vetores e structs em projetos práticos.</p>
+        </article>
+        <article class="card">
+          <h3>Organização de Projeto</h3>
+          <p>Separação de arquivos, padronização de nomes, navegação entre páginas e apresentação clara do conteúdo.</p>
+        </article>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- Rodapé com navegação complementar. -->
+  <footer class="site-footer">
+    <div class="container footer-content">
+      <p>&copy; 2026 Nataly - Perfil Profissional.</p>
+      <p><a href="https://github.com/" target="_blank" rel="noopener">GitHub</a></p>
+    </div>
+  </footer>
+
+  <!-- VLibras. -->
+  <div vw class="enabled">
+    <div vw-access-button class="active"></div>
+    <div vw-plugin-wrapper>
+      <div class="vw-plugin-top-wrapper"></div>
+    </div>
+  </div>
+  <script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
+  <script>
+    new window.VLibras.Widget('https://vlibras.gov.br/app');
+  </script>
+</body>
+</html>
