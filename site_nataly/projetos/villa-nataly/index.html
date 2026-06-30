@@ -1,81 +1,66 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
-    
-<head >
-   
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    
-    <link rel="icon" href="logo.png - Copia.png">
-   
-    <title>Villa Nataly</title>
-
-    <link rel="stylesheet" href="style.css">
-
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Villa Nataly - Restaurante com pratos deliciosos, sobremesas incríveis e bebidas refrescantes.">
+  
+  <link rel="icon" href="logo.png">
+  <title>Villa Nataly - Restaurante</title>
+  
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
+  <!-- Link visível apenas ao usar teclado -->
+  <a class="skip-link" href="#conteudo">Pular para o conteúdo principal</a>
 
-    
-   <header>
-
-    <div style="text-align: center;">
-
-        <img src="logo.png.png"
-             width="300"
-             alt="Logo Villa Nataly">
-
-       
-
-        <nav>
-            <a href="index.html">Início</a> |
-            <a href="cardapio.html">Nosso Cardápio</a> |
-            <a href="pedido.html">Faça seu Pedido</a>
+  <!-- Cabeçalho -->
+  <header class="site-header">
+    <div class="container">
+      <div class="header-content">
+        <img src="logo.png" alt="Logo Villa Nataly" class="logo-img">
+        
+        <!-- Navegação principal -->
+        <nav class="main-nav" aria-label="Menu principal">
+          <ul>
+            <li><a href="index.html" aria-current="page" class="active">Início</a></li>
+            <li><a href="cardapio.html">Nosso Cardápio</a></li>
+            <li><a href="pedido.html">Faça seu Pedido</a></li>
+          </ul>
         </nav>
-
+      </div>
     </div>
+  </header>
 
-</header>
-
-    
-    <main>
-         <div style="text-align: center;">
-
-        <h2>Bem-vindo à Villa Nataly!</h2>
-
-        <img src="restaurante.png"
-             width="500"
-             alt="Imagem do restaurante">
-
-        <p>
+  <!-- Conteúdo principal -->
+  <main id="conteudo" tabindex="-1">
+    <!-- Hero section -->
+    <section class="hero">
+      <div class="container hero-content">
+        <div>
+          <h1>Bem-vindo à Villa Nataly!</h1>
+          <p>
             Seja bem-vindo ao nosso restaurante! Aqui você encontra pratos deliciosos,
             sobremesas incríveis e bebidas refrescantes para toda a família.
-        </p>
+          </p>
+          <a href="cardapio.html" class="btn btn-primary">Ver Cardápio</a>
         </div>
+        
+        <img src="restaurante.png" alt="Ambiente aconchegante do restaurante Villa Nataly" class="hero-img">
+      </div>
+    </section>
+  </main>
 
-    </main>
-
-    
-    <footer>
-        <hr>
-
-        <p>
-            &copy; Villa Nataly - 2026
-        </p>
-
-        <p>
-            Telefone: (16)&nbsp;99999&ndash;9999
-        </p>
-
-        <p>
-            Rua Central, 100 &mdash; Araraquara &mdash; SP
-        </p>
-
-        <p>
-            Horário de funcionamento: 11h às 23h
-        </p>
-
-    </footer>
-
+  <!-- Rodapé -->
+  <footer class="site-footer">
+    <div class="container footer-content">
+      <p>&copy; Villa Nataly - 2026</p>
+      <div class="contact-info">
+        <p><strong>Telefone:</strong> (16) 99999-9999</p>
+        <p><strong>Endereço:</strong> Rua Central, 100 — Araraquara — SP</p>
+        <p><strong>Horário:</strong> 11h às 23h</p>
+      </div>
+    </div>
+  </footer>
 </body>
 </html>
