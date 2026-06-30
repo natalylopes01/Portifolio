@@ -12,7 +12,7 @@
   <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-  <!-- Link visível apenas ao usar teclado. -->
+  <!-- Link visível apenas ao usar teclado: permite pular o menu e ir direto ao conteúdo. -->
   <a class="skip-link" href="#conteudo">Pular para o conteúdo principal</a>
 
   <!-- Cabeçalho fixo: reúne a marca do site e o menu principal. -->
@@ -72,7 +72,7 @@
       </article>
     </section>
 
-    <!-- Interesses. -->
+    <!-- Interesses: seção complementar sem o item Comunicação, conforme solicitado. -->
     <section class="container section" aria-labelledby="interesses-titulo">
       <h2 id="interesses-titulo">Interesses e objetivos</h2>
       <div class="grid">
@@ -91,6 +91,21 @@
       </div>
     </section>
 
+    <section class="container section" aria-labelledby="musica-titulo">
+      <div class="card">
+        <h2 id="musica-titulo">Uma música especial</h2>
+        <p>
+          <strong>"Nothing Else Matters"</strong>, da banda Metallica, é uma das músicas favoritas da Nataly.
+          Além de sua melodia marcante, ela transmite uma mensagem de autenticidade, confiança e de valorizar aquilo que realmente importa.
+        </p>
+        <video controls preload="metadata" style="width:100%;border-radius:16px;margin-top:1rem;">
+          <source src="media/nothing-else-matters.mp4" type="video/mp4">
+          Seu navegador não suporta a reprodução de vídeos.
+        </video>
+      </div>
+    </section>
+
+
   </main>
 
   <!-- Rodapé com navegação complementar. -->
@@ -101,7 +116,7 @@
     </div>
   </footer>
 
-  <!-- VLibras. -->
+  <!-- VLibras: recurso de acessibilidade solicitado no trabalho. -->
   <div vw class="enabled">
     <div vw-access-button class="active"></div>
     <div vw-plugin-wrapper>

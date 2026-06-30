@@ -1,9 +1,9 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-  <!-- Configurações básicas da página. charset: permite caracteres especiais. viewport: permite responsividade. -->
-  <meta charset="UTF-8"> 
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+  <!-- Configurações básicas da página. -->
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="description" content="Perfil profissional de Nataly, estudante de Tecnologia em Sistemas para Internet.">
 
   <title>Nataly | Perfil Profissional</title>
@@ -12,7 +12,7 @@
   <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-  <!-- Link visível apenas ao usar teclado. -->
+  <!-- Link visível apenas ao usar teclado: permite pular o menu e ir direto ao conteúdo. -->
   <a class="skip-link" href="#conteudo">Pular para o conteúdo principal</a>
 
   <!-- Cabeçalho fixo: reúne a marca do site e o menu principal. -->
@@ -56,6 +56,15 @@
       </aside>
     </section>
 
+    <!-- Resumo curto: melhora a página inicial sem voltar com a seção de destaques removida. -->
+    <section class="container section" aria-labelledby="resumo-titulo">
+      <h2 id="resumo-titulo">Apresentação</h2>
+      <p class="section-intro">
+        Este site reúne informações sobre a trajetória, competências, currículo e projetos da Nataly.
+        O layout foi desenvolvido com foco em responsividade, acessibilidade, boa leitura e identidade visual moderna.
+      </p>
+    </section>
+
   </main>
 
   <!-- Rodapé com navegação complementar. -->
@@ -66,7 +75,7 @@
     </div>
   </footer>
 
-  <!-- VLibras. -->
+  <!-- VLibras: recurso de acessibilidade solicitado no trabalho. -->
   <div vw class="enabled">
     <div vw-access-button class="active"></div>
     <div vw-plugin-wrapper>

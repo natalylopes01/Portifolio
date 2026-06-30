@@ -12,7 +12,7 @@
   <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-  <!-- Link visível apenas ao usar teclado. -->
+  <!-- Link visível apenas ao usar teclado: permite pular o menu e ir direto ao conteúdo. -->
   <a class="skip-link" href="#conteudo">Pular para o conteúdo principal</a>
 
   <!-- Cabeçalho fixo: reúne a marca do site e o menu principal. -->
@@ -42,7 +42,7 @@
       <p>Informações organizadas em tabelas e listas para facilitar a leitura.</p>
     </section>
 
-    <!-- Tabela  apresenta a formação acadêmica. -->
+    <!-- Tabela obrigatória do trabalho: apresenta a formação acadêmica. -->
     <section class="container section" aria-labelledby="formacao-titulo">
       <h2 id="formacao-titulo">Formação acadêmica</h2>
       <div class="table-wrapper">
@@ -51,23 +51,18 @@
             <tr>
               <th scope="col">Curso</th>
               <th scope="col">Instituição</th>
-              <th scope="col">Situação</th>
+              <th scope="col">Ano</th>
             </tr>
           </thead>
           <tbody>
             <tr>
               <td>Tecnologia em Sistemas para Internet</td>
               <td>IFSP Araraquara</td>
-              <td>Em andamento</td>
+              <td>2026</td>
             </tr>
             <tr>
               <td>Ensino Médio</td>
-              <td>E.E. Joaquim Pinto Machado Júnior</td>
-              <td>Concluído</td>
-            </tr>
-            <tr>
-              <td>Inglês Básico</td>
-              <td>Senac Araraquara</td>
+              <td>Instituição de ensino</td>
               <td>Concluído</td>
             </tr>
           </tbody>
@@ -75,7 +70,7 @@
       </div>
     </section>
 
-    <!-- Cards de competências: listas e conteúdo curricular. -->
+    <!-- Cards de competências: listas obrigatórias e conteúdo curricular. -->
     <section class="container section" aria-labelledby="competencias-titulo">
       <h2 id="competencias-titulo">Competências</h2>
       <div class="grid">
@@ -120,7 +115,7 @@
     </div>
   </footer>
 
-  <!-- VLibras. -->
+  <!-- VLibras: recurso de acessibilidade solicitado no trabalho. -->
   <div vw class="enabled">
     <div vw-access-button class="active"></div>
     <div vw-plugin-wrapper>
